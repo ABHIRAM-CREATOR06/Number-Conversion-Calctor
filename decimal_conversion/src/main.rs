@@ -2,18 +2,21 @@ use std::io;
 
 mod conversion;
 mod area;
+mod tempe;
 
 fn main() {
     println!("Enter your choice:");
     println!("1: convertion of number to different  base");
     println!("2: calculate area in  different units");
+    println!("3: Temperature convetor [Kelvin,celcius,Fahrenheit,rankine");
     let mut ch = String::new(); 
     io::stdin().read_line(&mut ch).expect("Failed to read line");
     let choice: u8 = ch.trim().parse().expect("Invalid input");
 
     match choice {
         1 => convert(),  
-        2 => area(),     
+        2 => area(),
+        3 => tempe(),     
         _ => println!("Invalid choice"),
     }
 }
@@ -58,5 +61,23 @@ fn area() {
         4 => area::square_area(),     // Assuming the function exists in area.rs
         5 => area::polygon_area(),    // Assuming the function exists in area.rs
         _ => println!("Invalid option. Please choose a number from 1 to 5."),
+    }
+}
+fn tempe(){
+    println!("welcome to temperature  converter");
+    println!("Enter original temperature unit");
+    println!("1. Celcius");
+    println!("2. Farenheit");
+    println!("3. Kelvin");
+    println!("4.Rankine");
+    let mut choice=String::new();
+    io::stdin().read_line(&mut choice).expect("Failed to read line");
+    let choice:u8=choice.trim().parse().expect("Invalid choice");
+    match choice {
+        1=>tempe::celcius(),
+        2=>tempe::fahrenheit(),
+        3=>tempe::kelvin(),
+        4=>tempe::rankine(),
+        _=>println!("Invalid option. Please choose a number from 1 to 4"),
     }
 }
