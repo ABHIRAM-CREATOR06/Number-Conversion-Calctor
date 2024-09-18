@@ -3,6 +3,8 @@
 # Decimal Conversion
 
 This Rust project demonstrates how to perform number conversions with decimal points using a user-defined module. The project uses the `rust_decimal` crate for high-precision decimal arithmetic.
+- Conversion from base to another with a accuracy upto a base of of 32 [for high accuracy] 
+
 # Area Calculator
 This rust project was upgraded with ability to calculate areas of:-
 - Square
@@ -11,7 +13,11 @@ This rust project was upgraded with ability to calculate areas of:-
 - Circle
 - Regular polygon with n side
 
-and ability to convert into various units 
+and ability to convert into various units.
+
+# Temperature Convertor
+A ability to convert from temperatures units of celcius,fahrenheit,kelvin,rankine fom one another.
+
 
 ## Project Structure
 
