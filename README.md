@@ -10,13 +10,15 @@ This rust project was upgraded with ability to calculate areas of:-
 - Triangle
 - Circle
 - Regular polygon with n side
-  and ability to convert into various units
+
+and ability to convert into various units 
 
 ## Project Structure
 
 - `src/`
   - `main.rs`: The main entry point of the application.
   - `arithmetic.rs`: A module containing functions for arithmetic operations.
+  - `area.rs`: A module containing functions for area calculations.
 
 ## Dependencies
 
