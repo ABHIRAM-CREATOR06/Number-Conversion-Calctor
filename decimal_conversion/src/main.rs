@@ -3,20 +3,22 @@ use std::io;
 mod conversion;
 mod area;
 mod tempe;
+mod lenght;
 
 fn main() {
     println!("Enter your choice:");
     println!("1: convertion of number to different  base");
     println!("2: calculate area in  different units");
     println!("3: Temperature convetor [Kelvin,celcius,Fahrenheit,rankine");
+    println!("4: length converter");
     let mut ch = String::new(); 
     io::stdin().read_line(&mut ch).expect("Failed to read line");
     let choice: u8 = ch.trim().parse().expect("Invalid input");
-
     match choice {
         1 => convert(),  
         2 => area(),
-        3 => tempe(),     
+        3 => tempe(),
+        4 => lenght(),   
         _ => println!("Invalid choice"),
     }
 }
@@ -79,5 +81,31 @@ fn tempe(){
         3=>tempe::kelvin(),
         4=>tempe::rankine(),
         _=>println!("Invalid option. Please choose a number from 1 to 4"),
+    }
+}
+fn lenght(){
+    println!("welcome to length converter");
+    println!("enter original units: ");
+    println!("1. meter");
+    println!("2. centimeter");
+    println!("3. millimeter");
+    println!("4. kilometer");
+    println!("5. inch");
+    println!("6. feet");
+    println!("7. yard");
+    println!("8. mile");
+    let mut choice=String::new();
+    io::stdin().read_line(&mut choice).expect("Failed to read the line");
+    let choice:u8=choice.trim().parse().expect("Invalid choice");
+    match choice {
+        1=>lenght::meter(),
+        2=>lenght::centimeter(),
+        3=>lenght::millimeter(),
+        4=>lenght::kilometer(),
+        5=>lenght::inch(),
+        6=>lenght::feet(),
+        7=>lenght::yard(),
+        8=>lenght::mile(),
+        _=>println!("Invalid option. Please choose a number from 1 to 8"),
     }
 }
