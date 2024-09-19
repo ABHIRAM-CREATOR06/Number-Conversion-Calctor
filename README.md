@@ -17,7 +17,10 @@ and ability to convert into various units.
 
 # Temperature Convertor
 A ability to convert from temperatures units of celcius,fahrenheit,kelvin,rankine fom one another.
+-  Also it can convert from one unit to another with a accuracy upto 4 decimal places.
 
+# Lenght Convertor
+This project was upgraded with ability to convert from length units of meter,centimeter,inch,foot,yard,mile.
 
 ## Project Structure
 
