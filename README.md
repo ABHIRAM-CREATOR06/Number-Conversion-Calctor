@@ -34,6 +34,10 @@ this project was upgraded with ability to calculate:-
 
 and  ability to convert into various units.
 
+## Miscellaneous Operation
+- Angle operations
+- Data Transfer unis
+- Fuel Economy units
 
 ## Project Structure
 
@@ -56,7 +60,8 @@ rust_decimal_macros = "1.36"
 ```
 
 #### Please adhere to this project's `code of conduct`and support the developer with a follow and star.
-#### Devolopment process of time,fuel,economy,angle, data size modules are planned and would be added after development and testing.
+#### NOTE! :: planning to convert this into full web page using html,css,javascript once after completetion thus feel free to raise suggestions or opinion
+#### Devolopment process of time, data transfer size, Fuel economy modules are under development and would be added after development and testing.
 
 
 
