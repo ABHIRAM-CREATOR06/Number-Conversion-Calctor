@@ -5,6 +5,7 @@ mod area;
 mod tempe;
 mod lenght;
 mod physics;
+mod physicc;
 
 fn main() {
     loop {
@@ -126,6 +127,7 @@ fn lenght() {
 
 fn physics() {
     println!("welcome to physics calculator");
+    println!("note that all units are in SI units:");
     println!("1. acceleration");
     println!("2. velocity");
     println!("3. force");
@@ -135,6 +137,7 @@ fn physics() {
     println!("7. work");
     println!("8. torque");
     println!("9. pressure");
+    println!("10.convert the units: ");
     let mut choice = String::new();
     io::stdin().read_line(&mut choice).expect("Failed to read the line");
     let choice: u16 = choice.trim().parse().expect("failed to read the message");
@@ -148,6 +151,7 @@ fn physics() {
         7 => physics::work(),
         8 => physics::torque(),
         9 => physics::pressure(),
+        10 =>physicc::convert(),
         _ => println!("Invalid option. Please choose a number from 1 to 9"),
     }
 }
