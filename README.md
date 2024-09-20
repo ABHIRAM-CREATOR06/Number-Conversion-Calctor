@@ -60,7 +60,7 @@ rust_decimal_macros = "1.36"
 ```
 
 #### Please adhere to this project's `code of conduct`and support the developer with a follow and star.
-#### NOTE! :: planning to convert this into full web page using html,css,javascript once after completetion thus feel free to raise suggestions or opinion
+
 #### Devolopment process of time, data transfer size, Fuel economy modules are under development and would be added after development and testing.
 
 
