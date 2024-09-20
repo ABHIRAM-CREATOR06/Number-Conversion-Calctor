@@ -39,6 +39,12 @@ and  ability to convert into various units.
 - Data Transfer unis
 - Fuel Economy units
 
+## Time Operation
+-  Time conversion from one unit to another
+- Time calculation of time difference between two time
+- Calculate effiency of a work
+
+
 ## Project Structure
 
 - `src/`
@@ -61,7 +67,7 @@ rust_decimal_macros = "1.36"
 
 #### Please adhere to this project's `code of conduct`and support the developer with a follow and star.
 
-#### Devolopment process of time, data transfer size, Fuel economy modules are under development and would be added after development and testing.
+#### Devolopment process of  data transfer size, Fuel economy modules are under development and would be added after development and testing.
 
 
 
