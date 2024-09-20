@@ -60,7 +60,7 @@ rust_decimal_macros = "1.36"
 ```
 
 #### Please adhere to this project's `code of conduct`and support the developer with a follow and star.
-#### Devolopment process of time,fuel,economy,angle, data size modules are planned and would be added after development and testing.
+#### Devolopment process of time, data transfer size, Fuel economy modules are under development and would be added after development and testing.
 
 
 
