@@ -34,6 +34,10 @@ this project was upgraded with ability to calculate:-
 
 and  ability to convert into various units.
 
+## Miscellaneous Operation
+- Angle operations
+- Data Transfer unis
+- Fuel Economy units
 
 ## Project Structure
 
