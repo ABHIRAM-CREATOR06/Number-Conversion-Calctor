@@ -32,7 +32,8 @@ this project was upgraded with ability to calculate:-
 - acceleration
 - volume
 
-Conversion to other bases would be added soon
+and  ability to convert into various units.
+
 
 ## Project Structure
 
