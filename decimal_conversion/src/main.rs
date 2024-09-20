@@ -7,6 +7,7 @@ mod lenght;
 mod physics;
 mod physicc;
 mod afd;
+mod time;
 
 fn main() {
     loop {
@@ -17,6 +18,7 @@ fn main() {
         println!("4: length converter");
         println!("5: Physics calculator [mass, density, power, pressure]");
         println!("6::miscellaneous calulations [angle,data transfer unit,fuel economy");
+        println!("7: Time operations");
         let mut ch = String::new();
         io::stdin().read_line(&mut ch).expect("Failed to read line");
         let choice: u8 = ch.trim().parse().expect("Invalid input");
@@ -27,6 +29,7 @@ fn main() {
             4 => lenght(),
             5 => physics(),
             6 => afd(),
+            7=> time(),
             _ => println!("Invalid choice"),
         }
 
@@ -172,4 +175,19 @@ fn afd(){
         3=>afd::datasp(),
         _=>println!("Invalid option. Please choose a number from 1 to 3"),
     }
+}
+fn time(){
+    println!("welcome to time calculator");
+    println!("1. time conversions");
+    println!("2. time calculations");
+    println!("Enter choice");
+    let mut choice=String::new();
+    io::stdin().read_line(&mut choice).expect("Failed to read the line");
+    let choice:u8=choice.trim().parse().expect("Invalid choice");
+    match choice {
+        1=>time::convert(),
+        2=>time::calculate(),
+        _=>println!("Invalid option. Please choose a number from 1 to 3"),
+    }
+
 }
