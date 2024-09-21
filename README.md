@@ -62,7 +62,12 @@ and  ability to convert into various units.
   - `main.rs`: The main entry point of the application.
   - `arithmetic.rs`: A module containing functions for arithmetic operations.
   - `area.rs`: A module containing functions for area calculations.
-
+  - `data.rs` : A module containing operations for data transfer speed.
+  - `physics.rs`: A module containing details about physics operation.
+  - `lenght.rs` : Amodule containg information about lenght operations
+  - `physicc.rs`: A subpart module of `physics.rs` containg operation about convertsion from one base to another
+  - `tempe.rs`: A module containing details of temperature.
+  - `time.rs`: A module containg details of time operations
 ## Dependencies
 
 - `rust_decimal`: A crate for high-precision decimal arithmetic.
