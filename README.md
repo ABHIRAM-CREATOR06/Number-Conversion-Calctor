@@ -1,5 +1,5 @@
 
-# Multi-Dimensional Convertor
+# Multi-Dimensional Calculator
 ## Decimal Conversion
 
 This Rust project demonstrates how to perform number conversions with decimal points using a user-defined module. The project uses the `rust_decimal` crate for high-precision decimal arithmetic.
@@ -44,6 +44,17 @@ and  ability to convert into various units.
 - Time calculation of time difference between two time
 - Calculate effiency of a work
 
+## Fuel Calculations
+- Get ideas about efficiency
+- get knowledge about environmental issues like carbon footprint
+- Annual Fuel Cost
+- Fuel consumptions
+- Monthly savings when buying a new car
+
+## Data Transfer
+- Converting into various bases
+- Network Speed predictor
+- Network Statistics
 
 ## Project Structure
 
