@@ -67,7 +67,12 @@ and  ability to convert into various units.
   - `lenght.rs` : Amodule containg information about lenght operations
   - `physicc.rs`: A subpart module of `physics.rs` containg operation about convertsion from one base to another
   - `tempe.rs`: A module containing details of temperature.
-  - `time.rs`: A module containg details of time operations
+  - `time.rs`: A module containg details of time operations.
+- `target/`
+     - contains debugging files
+- `cargo.lock`
+- `cargo.toml`
+
 ## Dependencies
 
 - `rust_decimal`: A crate for high-precision decimal arithmetic.
