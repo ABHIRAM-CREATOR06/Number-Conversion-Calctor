@@ -1,4 +1,4 @@
-use std::io;
+use std::{io, num::ParseIntError};
 
 mod conversion;
 mod area;
@@ -8,6 +8,8 @@ mod physics;
 mod physicc;
 mod afd;
 mod time;
+mod data;
+mod fuel;
 
 fn main() {
     loop {
@@ -19,6 +21,8 @@ fn main() {
         println!("5: Physics calculator [mass, density, power, pressure]");
         println!("6::miscellaneous calulations [angle,data transfer unit,fuel economy");
         println!("7: Time operations");
+        println!("8: Data operations");
+        println!("9: Fuel operations");
         let mut ch = String::new();
         io::stdin().read_line(&mut ch).expect("Failed to read line");
         let choice: u8 = ch.trim().parse().expect("Invalid input");
@@ -30,6 +34,8 @@ fn main() {
             5 => physics(),
             6 => afd(),
             7=> time(),
+            8=> data(),
+            9=> fuel(),
             _ => println!("Invalid choice"),
         }
 
@@ -189,5 +195,34 @@ fn time(){
         2=>time::calculate(),
         _=>println!("Invalid option. Please choose a number from 1 to 3"),
     }
+
+}
+fn fuel(){
+    println!("welcome to fuel calculator");
+    println!("Press 1 for Fuel operation:");
+    let mut  choice=String::new();
+    io::stdin().read_line(&mut choice).expect("Failed to read the line");
+    let choice:u8=choice.trim().parse().expect("Invalid choice");
+    match choice {
+        1=>fuel::fuel(),
+        _=>println!("Invalid option. Please choose a number from 1"),
+    }
+}
+fn data(){
+    println!("welcome to data calculator");
+    println!("1. data conversions");
+    println!("2. data calculations");
+    println!("3.  data statistics");
+    println!("4. download/update speed");
+    let mut choice=String::new();
+    io::stdin().read_line(&mut choice).expect("Failed to read the line");
+    let choice:u8=choice.trim().parse().expect("Invalid choice");
+    match choice {
+        1=>data::convert(),
+        2=>data::calculate(),
+        3=>data::stat(),
+        4=>data::speed(),
+        _=>println!("Invalid option. Please choose a number from 1 to 4"),
+    }    
 
 }
