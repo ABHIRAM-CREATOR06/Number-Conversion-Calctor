@@ -56,6 +56,10 @@ and  ability to convert into various units.
 - Network Speed predictor
 - Network Statistics
 
+## Language and Script Pedictor
+- Write a text/copy the text from another source and paste here it to get the language and script details
+- Added system relaiblity and predicatbilty showing how much reliable the data is
+
 ## Project Structure
 
 - `src/`
