@@ -7,3 +7,4 @@ authors=["Abhiram Praneeth <abhirampraneeth2005@gmail.com"]
 [dependencies]
 rust_decimal = "1.36"
 rust_decimal_macros = "1.36"
+whatlang="0.16.4"

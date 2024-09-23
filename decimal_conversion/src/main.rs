@@ -1,4 +1,7 @@
 use std::{io, num::ParseIntError};
+use whatlang::{detect, Lang, Script};
+use std::io::{Write};
+
 
 mod conversion;
 mod area;
@@ -23,6 +26,7 @@ fn main() {
         println!("7: Time operations");
         println!("8: Data operations");
         println!("9: Fuel operations");
+        println!("10: Find language and Script");
         let mut ch = String::new();
         io::stdin().read_line(&mut ch).expect("Failed to read line");
         let choice: u8 = ch.trim().parse().expect("Invalid input");
@@ -36,6 +40,7 @@ fn main() {
             7=> time(),
             8=> data(),
             9=> fuel(),
+            10=>script(),
             _ => println!("Invalid choice"),
         }
 
@@ -225,4 +230,26 @@ fn data(){
         _=>println!("Invalid option. Please choose a number from 1 to 4"),
     }    
 
+}
+fn what_language(text: &str) {
+    let info = detect(text).unwrap();
+    println!("Language type: {:?}", info.lang());
+    println!("Language Script: {:?}", info.script());
+    println!("System confidence: {}", info.confidence());
+    println!("System reliability: {}", info.is_reliable());
+
+    if info.is_reliable() {
+        println!("The detected language is reliable: True");
+    } else {
+        println!("The detected language is reliable: False");
+    }
+}
+
+fn script() {
+    print!("Enter some text: ");
+    io::stdout().flush().unwrap();
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).expect("Failed to read line");
+    let input = input.trim();
+    what_language(input);
 }
