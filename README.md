@@ -88,6 +88,7 @@ Add the following to your `Cargo.toml` file:
 [dependencies]
 rust_decimal = "1.36"
 rust_decimal_macros = "1.36"
+whatlang="0.16.4"
 ```
 
 #### Please adhere to this project's `code of conduct`and support the developer with a follow and star.
