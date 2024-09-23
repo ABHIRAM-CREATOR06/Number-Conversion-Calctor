@@ -1,5 +1,5 @@
 
-# Multi-Dimensional Convertor
+# Multi-Dimensional Calculator
 ## Decimal Conversion
 
 This Rust project demonstrates how to perform number conversions with decimal points using a user-defined module. The project uses the `rust_decimal` crate for high-precision decimal arithmetic.
@@ -44,6 +44,17 @@ and  ability to convert into various units.
 - Time calculation of time difference between two time
 - Calculate effiency of a work
 
+## Fuel Calculations
+- Get ideas about efficiency
+- get knowledge about environmental issues like carbon footprint
+- Annual Fuel Cost
+- Fuel consumptions
+- Monthly savings when buying a new car
+
+## Data Transfer
+- Converting into various bases
+- Network Speed predictor
+- Network Statistics
 
 ## Project Structure
 
@@ -51,6 +62,16 @@ and  ability to convert into various units.
   - `main.rs`: The main entry point of the application.
   - `arithmetic.rs`: A module containing functions for arithmetic operations.
   - `area.rs`: A module containing functions for area calculations.
+  - `data.rs` : A module containing operations for data transfer speed.
+  - `physics.rs`: A module containing details about physics operation.
+  - `lenght.rs` : Amodule containg information about lenght operations
+  - `physicc.rs`: A subpart module of `physics.rs` containg operation about convertsion from one base to another
+  - `tempe.rs`: A module containing details of temperature.
+  - `time.rs`: A module containg details of time operations.
+- `target/`
+     - contains debugging files
+- `cargo.lock`
+- `cargo.toml`
 
 ## Dependencies
 
@@ -67,7 +88,7 @@ rust_decimal_macros = "1.36"
 
 #### Please adhere to this project's `code of conduct`and support the developer with a follow and star.
 
-#### Devolopment process of  data transfer size, Fuel economy modules are under development and would be added after development and testing.
+#### Development of project completed on 9/21/2024 at 7:44 UST
 
 
 
