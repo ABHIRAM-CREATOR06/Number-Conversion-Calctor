@@ -88,10 +88,3 @@ pub fn angle() {
 
     println!("Result of {}({}) {} {}({}): {:.4}", func1, value1, operation, func2, value2, result);
 }
-
-pub fn datasp(){
-    println!("coming soon");
-}
-pub fn fuel(){
-    println!("coming soon");
-}

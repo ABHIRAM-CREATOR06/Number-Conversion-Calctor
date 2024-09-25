@@ -1,6 +1,6 @@
-use std::{io, num::ParseIntError};
+use std::io;
 use whatlang::{detect, Lang, Script};
-use std::io::{Write};
+use std::io::Write;
 
 
 mod conversion;
@@ -17,16 +17,16 @@ mod fuel;
 fn main() {
     loop {
         println!("Enter your choice:");
-        println!("1: convertion of number to different base");
-        println!("2: calculate area in different units");
-        println!("3: Temperature converter [Kelvin, Celcius, Fahrenheit, Rankine]");
-        println!("4: length converter");
-        println!("5: Physics calculator [mass, density, power, pressure]");
-        println!("6::miscellaneous calulations [angle,data transfer unit,fuel economy");
-        println!("7: Time operations");
-        println!("8: Data operations");
-        println!("9: Fuel operations");
-        println!("10: Find language and Script");
+        println!("1: convertion of number to different base 🤓");
+        println!("2: calculate area in different units ✖️➕➖➗🟰 ");
+        println!("3: Temperature converter [Kelvin, Celcius, Fahrenheit, Rankine]  ❄️☀️");
+        println!("4: length converter ⚖️");
+        println!("5: Physics calculator [mass, density, power, pressure]  🤖");
+        println!("6::miscellaneous calulations [angle]  🤔");
+        println!("7: Time operations  ⏰");
+        println!("8: Data operations   📊");
+        println!("9: Fuel operations   ⛽️");
+        println!("10: Find language and Script  of a text  🌎");
         let mut ch = String::new();
         io::stdin().read_line(&mut ch).expect("Failed to read line");
         let choice: u8 = ch.trim().parse().expect("Invalid input");
@@ -78,9 +78,9 @@ fn area() {
     println!("WELCOME TO THE AREA CALCULATOR");
     println!("Please select an option to calculate the area:");
     println!("1. Area of Rectangle");
-    println!("2. Area of Circle");
-    println!("3. Area of Triangle");
-    println!("4. Area of Square");
+    println!("2. Area of Circle🟡");
+    println!("3. Area of Triangle 📐");
+    println!("4. Area of Square 🟩");
     println!("5. Area of Regular Polygon");
     let mut choice = String::new();
     io::stdin().read_line(&mut choice).expect("Failed to read line");
@@ -175,15 +175,11 @@ fn physics() {
 fn afd(){
     println!("welcome to afd calculator");
     println!("1:: Angle operations ");
-    println!("2:: Fuel econmy operations: ");
-    println!("3:: Speed operations ");
     let mut choice=String::new();
     io::stdin().read_line(&mut choice).expect("Failed to read the line");
     let choice:u8=choice.trim().parse().expect("Invalid choice");
     match choice {
         1=>afd::angle(),
-        2=>afd::fuel(),
-        3=>afd::datasp(),
         _=>println!("Invalid option. Please choose a number from 1 to 3"),
     }
 }
