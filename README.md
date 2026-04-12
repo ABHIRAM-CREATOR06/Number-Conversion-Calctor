@@ -86,3 +86,39 @@ rust_decimal_macros = "1.36"
 whatlang = "0.16.4"
 ```
 
+## Installation
+
+- Clone the Repo
+```bash
+git clone [https://github.com/ABHIRAM-CREATOR06/multi-dimensional-calculator.git](https://github.com/ABHIRAM-CREATOR06/multi-dimensional-calculator.git)
+
+cd multi-dimensional-calculator
+
+```
+
+ - Build and run
+
+``` cargo
+cargo build
+cargo run
+```
+---
+
+## Contributing
+
+Contributions make the open-source community an amazing place to learn and inspire.
+
+Please adhere to the Code of Conduct.
+
+Feel free to fork the project and submit a Pull Request.
+
+Show your support by giving the project a ⭐ and following the developer!
+
+---
+
+## ✍️ Author
+Abhiram GitHub: @ABHIRAM-CREATOR06
+
+Development Status: ✅ Completed (Sept 21, 2024)
+
+License: MIT
