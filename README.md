@@ -65,6 +65,9 @@ target/                   # Debugging files
 Cargo.toml
 Cargo.lock
 
+```
+---
+
 ## Dependencies
 
 This project relies on the following Rust crates:
@@ -81,3 +84,5 @@ Add the following to your `Cargo.toml`:
 rust_decimal = "1.36"
 rust_decimal_macros = "1.36"
 whatlang = "0.16.4"
+```
+
